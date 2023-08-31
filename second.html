@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Step</title>
+
+    <link rel="stylesheet" href="global.css">
+    
+    <style>
+        h1 {
+            view-transition-name: title;
+        }
+
+        .image-container {
+            position: absolute;
+
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            flex-direction: column;
+
+            right: 0;
+            bottom: 0;
+        }
+
+        .image {
+            max-width: clamp(150px, 10vw, 300px);
+            view-transition-name: image;
+        }
+
+        .icons {
+            top: 0;
+            left: 0;
+        }
+    </style>
+
+    <meta name="view-transition" content="same-origin" />
+</head>
+<body>
+    <h1>See? Stuff happened!</h1>
+
+    <div class="image-container">
+        <p>Now the image is over here</p>
+        <img src="img/moving-image.png" alt="A random image" class="image" />
+    </div>
+
+    <div class="links">
+        <a href="third.html">Ok, so... how does it work?</a>
+        <a href="/">Go back to start</a>
+    </div>
+
+    <div class="icons">
+        <a href="https://github.com/JLannoo" target="_blank" title="My Github">
+            <img src="img/github.svg" alt="Github icon" />
+        </a>
+        <a href="https://github.com/JLannoo/mpa-view-transition-test" target="_blank" title="Source code">
+            <img src="img/code.svg" alt="Code icon" />
+        </a>
+    </div>
+</body>
+</html>

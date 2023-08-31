@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Third Step</title>
+
+    <link rel="stylesheet" href="global.css">
+    
+    <style>
+        h1 {
+            view-transition-name: title;
+        }
+
+        .image {
+            max-width: clamp(250px, 50vw, 500px);
+            view-transition-name: image;
+        }
+
+        .icons {
+            top: 0;
+            right: 0;
+        }
+    </style>
+
+    <meta name="view-transition" content="same-origin" />
+</head>
+<body>
+    <h1>Well, it's pretty simple actually</h1>
+
+    <div class="text">
+        <p>If you open up your DevTools <kbd>F12</kbd> or <kbd>CTRL + SHIFT + I</kbd></p>
+        <p class="comment">> or whatever it is on MacOS</p>
+        <p>and navigate to another page.</p>
+
+        <p> You will see a bunch of pseudoelements like this:</p>
+
+        <img src="img/elements.png" alt="" class="image" />
+
+        <p>If the HTML has the meta tag <code>view-transition</code>, these are the elements that are being animated with CSS-like animations</p>
+
+        <p class="comment">> you can even customize them!</p>
+
+        <p>and are created by the browser and are not part of the DOM.</p>
+        <p>They are basically a screenshot of the element that they represent.</p>
+
+        <p class="comment">> the one that's tagged with the style <code>view-transition-name</code> </p>
+
+        <p>So, when you navigate to another page, the browser takes a screenshot of the element</p>
+        <p>and animates it to the new position.</p>
+    </div>
+
+    <p class="comment">> you might want to close DevTools when transitioning, it gets kinda weird and doesn't work sometimes when opened</p>
+
+    <div class="links">
+        <a href="fourth.html">Continue</a>
+        <a href="/">Go back to start</a>
+    </div>
+
+    <div class="icons">
+        <a href="https://github.com/JLannoo" target="_blank" title="My Github">
+            <img src="img/github.svg" alt="Github icon" />
+        </a>
+        <a href="https://github.com/JLannoo/mpa-view-transition-demo" target="_blank" title="Source code">
+            <img src="img/code.svg" alt="Code icon" />
+        </a>
+    </div>
+</body>
+</html>

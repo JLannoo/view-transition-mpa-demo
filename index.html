@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start</title>
+
+    <meta name="view-transition" content="same-origin" />
+
+    <link rel="stylesheet" href="global.css">
+    
+    <style>
+        h1 {
+            view-transition-name: title;
+        }
+
+        .image {
+            max-width: clamp(200px, 50vw, 500px);
+            view-transition-name: image;
+        }
+
+        .icons {
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hi! We're going to explore View Transitions on Multi Page Apps</h1>
+
+    <div class="text">
+        <p>Welcome! This is a demo of the View Transitions API on Multi Page Apps.</p>
+        <p class="comment">> I know, nerd name, but it's actually really cool.</p>
+        <p>In Chrome, you need to enable the flag <code>#view-transition-on-navigation</code> to see the transitions in action.</p>
+        <p>Enter <code>chrome://flags</code> in your address bar, search for <code>view-transition-on-navigation</code>, enable it and restart the browser as indicated.</p>
+
+        <p class="comment">> I'm not sure about support on other browsers</p>
+
+        <p>Ready? You done? Good.</p>
+        <p>Click on the link below.</p>
+    </div>
+    
+    <img src="img/image.png" alt="An image" class="image" />
+
+    <div class="links">
+        <a href="second.html">Continue</a>
+    </div>
+
+    <div class="icons">
+        <a href="https://github.com/JLannoo" target="_blank" title="My Github">
+            <img src="img/github.svg" alt="Github icon" />
+        </a>
+        <a href="https://github.com/JLannoo/mpa-view-transition-test" target="_blank" title="Source code">
+            <img src="img/code.svg" alt="Code icon" />
+        </a>
+    </div>
+</body>
+</html>

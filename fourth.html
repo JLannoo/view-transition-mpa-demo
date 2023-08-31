@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Final step</title>
+
+    <link rel="stylesheet" href="global.css">
+
+    <style>
+        h1 {
+            view-transition-name: title;
+        }
+
+        .links-comment {
+            position: relative;
+        }
+
+        .icons {
+            position: relative;
+        }
+
+        .icons img {
+            --size: clamp(0.2rem, 5vw, 2rem);
+            height: var(--size);
+            width: var(--size);
+        }
+    </style>
+
+    <meta name="view-transition" content="same-origin" />
+</head>
+<body>
+    <h1>Here's the cool thing...</h1>
+
+    <div class="text">
+        <p>This is happening between pages!</p>
+        <p>It's not just a simple animation, it's a whole new page!</p>
+
+        <p class="comment">> even if it just can be in same-origin pages (for now)</p>
+
+        <p>
+            You can se more information 
+            <a href="https://github.com/WICG/view-transitions/blob/main/cross-doc-explainer.md" target="_blank">HERE</a> 
+            in the official spec.
+        </p>
+
+        <p>
+            This API also supports Single Page Apps. I made a demo that you can check out 
+            <a href="https://jlannoo.github.io/view-transition-api-react/" target="_blank">HERE</a>.
+        </p>
+
+        <p>This gives us much more flexibility and the architecture of our app. It doesn't need to just be a SPA with hundreds of lines of Javascript</p>
+
+        <p>
+            If you want to check out the code for this page:
+            <a href="https://github.com/jlannoo/mpa-view-transition-test" target="_blank">HERE</a>
+        </p>
+
+        <div class="links-comment">
+            <p class="comment">
+                > or click the links that have been moving annoyingly around the page this whole time.
+            </p>
+
+            <div class="icons">
+                These links: 
+                <a href="https://github.com/JLannoo" target="_blank" title="My Github">
+                    <img src="img/github.svg" alt="Github icon" />
+                </a>
+                <a href="https://github.com/JLannoo/mpa-view-transition-test" target="_blank" title="Source code">
+                    <img src="img/code.svg" alt="Code icon" />
+                </a>
+            </div>
+        </div>
+
+        <p>That's it! Thanks for reading!</p>
+        <p>Hope you liked it!</p>
+        <p class="comment">> I liked it...</p>
+    </div>
+
+    <div class="links">
+        <a href="/">Back to start</a>
+    </div>
+</body>
+</html>
